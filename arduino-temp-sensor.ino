@@ -70,7 +70,7 @@ void loop() {
        client.println("<H1>");
          client.print("[");
          client.print(t*1.8+32);
-         client.println(" &#176;");
+         client.println("] &#176;");
          client.println("F");
        client.println("</H1>");
        client.println("<br />");
