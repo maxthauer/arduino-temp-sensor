@@ -68,6 +68,7 @@ void loop() {
          client.println("Temperature: ");
        client.println("</H2>");
        client.println("<H1>");
+         client.print("[");
          client.print(t*1.8+32);
          client.println(" &#176;");
          client.println("F");
@@ -78,8 +79,9 @@ void loop() {
        client.println("</H2>");
        client.println("<p />");
        client.println("<H1>");
+         client.print("[");
          client.print(h);
-         client.print(" %\t");
+         client.print("] %\t");
        client.println("</H1>");
        client.println("<p />"); 
      client.println("</center>");
